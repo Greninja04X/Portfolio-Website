@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Abhishek & Ronit</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="nav-vertical">
+    <div class="brand">
+      <div class="logo">Portfolio<span>.</span></div>
+      <ul class="nav-links subnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle dark/light" class="theme-toggle" title="Toggle theme">🌙</button>
+      <div class="hamburger"><div></div><div></div><div></div></div>
+    </div>
+  </nav>
+</header>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Your Email" required>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Abhishek Mazumder & Ronit Bhowmick | All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  (function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+      from_name: document.getElementById("name").value,
+      reply_to: document.getElementById("email").value,
+      message: document.getElementById("message").value
+    })
+    .then(() => alert("✅ Message Sent Successfully!"))
+    .catch(() => alert("❌ Failed to send message. Try again."));
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+# ==============================
+# 🧩 Portfolio Project — Netlify Hosting
+# ==============================
+
+# --- OS files ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Icon?
+$RECYCLE.BIN/
+
+# --- Build outputs / caches (any bundler: Vite/Webpack/Parcel/etc.) ---
+dist/
+build/
+.cache/
+.parcel-cache/
+.tmp/
+.temp/
+.eslintcache
+.stylelintcache
+.tsbuildinfo
+coverage/
+
+# --- Node / JS (optional; keep lockfiles committed if you add a toolchain) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- Netlify ---
+.netlify/
+.netlify/state.json
+# If you later add functions, keep the folder but ignore local artifacts
+netlify/functions/*.log
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+*.local
+*.key
+*.pem
+
+# --- Editors / IDEs ---
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.iml
+.project
+.settings/
+.history/
+*.code-workspace
+
+# --- Misc / archives / maps ---
+*.log
+*.tgz
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.map
+
+# --- Design/source binaries (optional to ignore) ---
+*.psd
+*.ai
+*.sketch
+
+# ==============================
+# ✅ Keep these tracked
+# ==============================
+!*.html
+!*.css
+!*.js
+!*.pdf
+!*.jpg
+!*.jpeg
+!*.png
+!*.svg
+!*.webp
+!README.md
+!LICENSE
+!netlify.toml
+!_redirects
+!.gitattributes
