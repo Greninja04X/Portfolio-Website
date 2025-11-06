@@ -26,7 +26,7 @@ This website is designed to be **minimal, responsive, and elegant**, offering a 
 ## 🚀 **Live Demo**
 
 🌍 **View the Website:**  
-- [Netlify Portfolio Hosting](https://duodevportfolio.netlify.app/)
+- [Netlify Portfolio Hosting](https://690cf314f7e815db3039d749--duodevportfolio.netlify.app/)
 - [GitHub Portfolio Hosting](https://greninja04x.github.io/Portfolio-Website/)
 ---
 
